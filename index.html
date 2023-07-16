@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Eve Lin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- ----------header-------------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><span class="highlight-container"><span class="highlight">Computer Science BS Undergraduate</span></span></p>
+            <h1>Hi! I'm <span>Eve Lin</span></h1>
+        </div>
+    </div>
+</div>
+<!-- ----------about-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Standing.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="info">
+                    Welcome to my portfolio! I'm Eve Lin, a 19-year-old junior majoring in Computer Science at the
+                    University at Buffalo's School of Engineering and Applied Sciences.
+                    I have a deep passion for technology and problem-solving, which has driven me to develop a foundation
+                    in Javascript, Python, HTML and CSS. Throughout my portfolio, you'll find a collection of projects that
+                    showcase my journey in the world of computer science.
+                </p>
+                <div class="tab-titles">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio-------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work </h1>
+        <p class="info">
+            None
+        </p>
+    </div>
+</div>
+<!-- ----------contact-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> evelin556656@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 3479815826</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/eve.lin.9809672?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/e.v.elin_?igshid=YzcxN2Q2NzY0OA=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/eve-lin-34a870283/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="blockBtn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="blockBtn">Submit</button>
+                </form>
+                <span id="msg">  </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Credits to GreatStack, jamiewilson, </p>
+    <p>yochans and Álvaro from Codepen</p>
+</div>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0"
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px"
+    }
+</script>
+<!-- ----------jamie-------------- -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwUdc1p0SRdFwn6tIT0op5f-H6Ia2WRRkVEHEf-UuQRjhsj9uw-_30jRAyR3ZKAJW86/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent :) Thank you!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
