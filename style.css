@@ -141,7 +141,7 @@ nav ul li a:hover::after{
     display: block;
     width: 100%;
     text-align: left;
-    background-color: #f5f5f5;
+    background-color: #f8cbcb;
     color: #333;
     padding: 10px;
     border: none;
