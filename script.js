@@ -43,10 +43,11 @@ form.addEventListener('submit', e => {
 
 // portfilo
 function toggleDetails(projectId) {
-    const details = document.getElementById(projectId);
-    if (details.style.display === "block") {
-        details.style.display = "none"; // Hide if visible
+    const projectDetails = document.getElementById(projectId);
+    if (projectDetails.style.display === "block") {
+        projectDetails.style.display = "none"; // Hide if already visible
     } else {
-        details.style.display = "block"; // Show if hidden
+        projectDetails.style.display = "block"; // Show if hidden
     }
 }
+

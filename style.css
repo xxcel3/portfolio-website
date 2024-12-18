@@ -137,23 +137,17 @@ nav ul li a:hover::after{
     color: #4d4d4f;
 }
 /* ---------portfolio------- */
-.projects {
-    margin-top: 20px;
-}
-
-.project {
-    margin-bottom: 15px;
-}
-
 .project-title {
+    display: block;
     width: 100%;
     text-align: left;
-    padding: 10px;
     background-color: #f5f5f5;
+    color: #333;
+    padding: 10px;
     border: none;
-    font-size: 16px;
     cursor: pointer;
-    outline: none;
+    font-size: 18px;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
@@ -162,21 +156,13 @@ nav ul li a:hover::after{
 }
 
 .project-details {
-    display: none; /* Hidden by default */
+    display: none; /* Initially hidden */
+    margin: 10px 0;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     border: 1px solid #ddd;
-    margin-top: 5px;
-}
-
-.project-details ul {
-    margin: 0;
-    padding: 0 15px;
-    list-style-type: disc;
-}
-
-.project-details ul li {
-    margin-bottom: 8px;
+    color: #555;
+    line-height: 1.5;
 }
 
 /* ---------contact------- */
@@ -258,7 +244,7 @@ nav .fas{
     #header{
         width: 100%;
         height: 100vh;
-        background-image: url(images/IDphoto.jpg);
+        background-image: url(images/headshot.jpg);
         background-size: cover;
         background-position:center;
     }
