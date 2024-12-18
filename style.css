@@ -137,6 +137,13 @@ nav ul li a:hover::after{
     color: #4d4d4f;
 }
 /* ---------portfolio------- */
+.project-video {
+    width: 80%; /* 80% of the parent container */
+    max-width: 800px; /* Limit the maximum size */
+    height: auto;
+}
+
+
 .project-title {
     display: block;
     width: 100%;
