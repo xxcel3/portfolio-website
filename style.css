@@ -139,7 +139,7 @@ nav ul li a:hover::after{
 /* ---------portfolio------- */
 .project-video {
     width: 80%; /* 80% of the parent container */
-    max-width: 800px; /* Limit the maximum size */
+    max-width: 500px; /* Limit the maximum size */
     height: auto;
 }
 
