@@ -137,6 +137,48 @@ nav ul li a:hover::after{
     color: #4d4d4f;
 }
 /* ---------portfolio------- */
+.projects {
+    margin-top: 20px;
+}
+
+.project {
+    margin-bottom: 15px;
+}
+
+.project-title {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-title:hover {
+    background-color: #ddd;
+}
+
+.project-details {
+    display: none; /* Hidden by default */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+.project-details ul {
+    margin: 0;
+    padding: 0 15px;
+    list-style-type: disc;
+}
+
+.project-details ul li {
+    margin-bottom: 8px;
+}
+
 /* ---------contact------- */
 .contact-left{
     flex-basis: 35%;

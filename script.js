@@ -40,3 +40,13 @@ form.addEventListener('submit', e => {
             msg.innerHTML = "Failed to send message. Please try again.";
         });
 });
+
+// portfilo
+function toggleDetails(projectId) {
+    const details = document.getElementById(projectId);
+    if (details.style.display === "block") {
+        details.style.display = "none"; // Hide if visible
+    } else {
+        details.style.display = "block"; // Show if hidden
+    }
+}
