@@ -1,20 +1,35 @@
 // src/pages/MainPage.jsx
 import React from "react";
-import { CatToggle } from "@/components/CatToggle";
 import { Navbar } from "@/components/Navbar";
-import { useNavigate } from "react-router-dom";
+import { CatToggle } from "@/components/CatToggle";
+import { StarBackground } from "@/components/StarBackground";
+import { AboutMe } from "@/components/AboutMe";
+import { Projects } from "@/components/Projects";
 
 export const MainPage = ({ audioRef }) => {
   return (
-    <header className="fixed top-0 w-full bg-rose-200 text-white z-20">
-      <div className="max-w-4xl mx-auto flex items-center justify-between p-4">
-        <div className="flex items-center space-x-4">
-          {/* Navbar brand and links */}
-          <Navbar />
-        </div>
-        {/* Mute/unmute cat icon */}
-        <CatToggle audioRef={audioRef} />
+    <div className="relative min-h-screen overflow-auto bg-transparent">
+      {/* Starry background */}
+      <div className="absolute inset-0">
+        <StarBackground />
       </div>
-    </header>
+
+      {/* Content over the stars */}
+      <div className="relative z-10">
+        {/* Navbar */}
+        <header className="fixed top-0 w-full bg-rose-300 text-white z-20 bg-opacity-80 backdrop-blur">
+          <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-between p-4">
+            <Navbar />
+            <CatToggle audioRef={audioRef} />
+          </div>
+        </header>
+
+        {/* Main content (transparent) */}
+        <main className="pt-24 bg-transparent">
+          <AboutMe />
+          <Projects />
+        </main>
+      </div>
+    </div>
   );
 };

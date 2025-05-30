@@ -14,3 +14,12 @@ StarBackground Component from PedroTech (https://github.com/machadop1407/beautif
 
 
 Background Music (Copyright Free) from Clavier Music (https://pixabay.com/music/modern-classical-soft-piano-music-272453/)
+
+
+Sound Effects
+
+
+https://pixabay.com/sound-effects/shooting-star-2-104073/
+
+
+https://pixabay.com/sound-effects/ui-and-menu-sounds-sleek-and-modern-demo-310501/
