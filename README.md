@@ -11,3 +11,6 @@ Graphics created from Canva
 
 ## Resources Used
 StarBackground Component from PedroTech (https://github.com/machadop1407/beautiful-react-tailwind-portfolio)
+
+
+Background Music (Copyright Free) from Clavier Music (https://pixabay.com/music/modern-classical-soft-piano-music-272453/)
