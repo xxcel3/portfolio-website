@@ -58,6 +58,12 @@ export function Contact() {
             <span>Back to Top</span>
           </button>
         </div>
+
+        <p className="text-sm text-muted-foreground">
+          {" "}
+          &copy; {new Date().getFullYear()} Eve Lin. All rights reserved.
+        </p>
+
       </div>
     </footer>
   );
