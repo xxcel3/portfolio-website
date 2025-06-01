@@ -11,8 +11,8 @@ export function Navbar() {
     audio.play().catch(() => {});
   };
   return (
-    <nav className="flex items-center space-x-12 px-6 py-4 bg-rose-300 bg-opacity-80 backdrop-blur-lg">
-      <span className="text-2xl font-bold tracking-wide select-none text-white">
+    <nav className="flex items-center space-x-12 px-6 py-4 bg-rose-300">
+      <span className="text-2xl font-bold tracking-wide text-white">
         Hello World!
       </span>
 

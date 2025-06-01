@@ -1,3 +1,5 @@
+// src/components/StarBackground.jsx
+// PedroTech
 import { useEffect, useState } from "react";
 
 // id, size, x, y, opacity, animationDuration

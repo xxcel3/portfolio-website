@@ -81,11 +81,11 @@ export function Projects() {
         {proj.videoSrc && <video src={proj.videoSrc} muted loop playsInline className="w-full h-64 object-cover rounded-lg mb-4" />}
 
 
-        <h3 className="text-2xl font-semibold mb-2 text-white">{proj.title}</h3>
-        <p className="text-base text-gray-200">{proj.description}</p>
+        <h3 className="text-2xl font-semibold mb-2">{proj.title}</h3>
+        <p className="text-base">{proj.description}</p>
 
         {/* if there's no media */}
-        {!proj.imageSrc && !proj.videoSrc && (<p className="mt-4 text-sm italic text-gray-400">Coming Soon</p>)}
+        {!proj.imageSrc && !proj.videoSrc && (<p className="mt-4 text-sm italic">Coming Soon</p>)}
       </>
     );
 
@@ -145,11 +145,11 @@ export function Projects() {
       {/* Fullscreen video */}
       {selectedVideo && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
-          {/* backdrop */}
-          <div className="absolute inset-0 bg-black bg-opacity-75 transition-opacity duration-300" onClick={() => setSelectedVideo(null)} />
-          <div className="relative bg-gray-900 rounded-3xl overflow-hidden shadow-2xl p-6 mx-4 max-w-4xl w-full">
+          {/* backdrop inset-0 span the screen*/}
+          <div className="absolute inset-0 bg-opacity-75" onClick={() => setSelectedVideo(null)} />
+          <div className="relative bg-gray-900 rounded-3xl shadow-2xl p-6 mx-4 max-w-4xl w-full">
             {/* Close button */}
-            <button onClick={() => setSelectedVideo(null)} className="absolute top-3 right-3 text-white text-3xl z-10">&times;</button>
+            <button onClick={() => setSelectedVideo(null)} className="absolute top-3 right-3 text-3xl z-10">&times;</button>
             <video src={selectedVideo} controls autoPlay className="w-full max-h-[90vh]" />
           </div>
         </div>

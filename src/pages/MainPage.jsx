@@ -5,6 +5,8 @@ import { CatToggle } from "@/components/CatToggle";
 import { StarBackground } from "@/components/StarBackground";
 import { AboutMe } from "@/components/AboutMe";
 import { Projects } from "@/components/Projects";
+import { Contact } from "@/components/Contact";
+
 
 export const MainPage = ({ audioRef }) => {
   return (
@@ -29,6 +31,8 @@ export const MainPage = ({ audioRef }) => {
           <AboutMe />
           <Projects />
         </main>
+
+        <Contact />
       </div>
     </div>
   );
