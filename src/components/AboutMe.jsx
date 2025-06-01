@@ -7,12 +7,12 @@ export function AboutMe() {
       {/* mobile: vertical stacked images */}
       <div className="flex flex-col items-center space-y-6 px-4 md:hidden">
         <img
-          src="/poloroid.png"
+          src={`${import.meta.env.BASE_URL}poloroid.png`}
           alt="Polaroid"
           className="w-full max-w-xs h-auto"
         />
         <img
-          src="/cloud.png"
+          src={`${import.meta.env.BASE_URL}cloud.png`}
           alt="Cloud"
           className="w-full max-w-xs h-auto"
         />
@@ -21,12 +21,12 @@ export function AboutMe() {
       {/* desktop: relative sizing */}
       <div className="hidden md:flex justify-between items-start px-[20%] space-x-8">
         <img
-          src="/poloroid.png"
+          src={`${import.meta.env.BASE_URL}poloroid.png`}
           alt="Polaroid"
           className="w-[50%] h-auto object-cover"
         />
         <img
-          src="/cloud.png"
+          src={`${import.meta.env.BASE_URL}cloud.png`}
           alt="Cloud"
           className="w-[50%] h-auto object-cover"
         />

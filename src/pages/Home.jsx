@@ -32,7 +32,7 @@ export const Home = ({ audioRef }) => {
       {/* clickable monitor graphic */}
       <div className="relative z-10 w-full max-w-6xl">
         <img
-          src="/PC.png"
+          src={`${import.meta.env.BASE_URL}/PC.png`}
           alt="Computer graphic (click to enter)"
           className="
             w-full
