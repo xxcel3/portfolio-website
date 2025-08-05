@@ -14,24 +14,26 @@ const PROJECTS = [
     githubLink: "https://github.com/xxcel3/portfolio-website", 
   },
   {
-    title: "[IOS] Gamified Step Tracker",
-    description:
-      "A planned iOS app that connects to Apple Health for step data, gamifies walking by rewarding users to care for a virtual pet.",
-    githubLink: "https://github.com/xxcel3" 
-  },
-  {
     title: "[Fullstack] Workspace/Notetaking Webapp",
     description:
-      "Used JavaScript, Python, PHP, and MySQL to build full-stack task management features, user authentication, and calendar integration.",
-    videoSrc: "videos/CreativeHub.mp4", 
-    githubLink: "https://github.com/xxcel3/CreativeHub"
+      "Built a full-stack productivity web app with AI-powered note summarization, supporting to-do lists, calendars, and secure user authentication.",
+    imageSrc: "prodify.png", 
+    link: "https://prodify-w3rb.onrender.com/",        
+    githubLink: "https://github.com/xxcel3/prodify-app"
   },
   {
     title: "[FullStack] Blogging Webapp",
     description:
-      "Built a full-stack blog platform with JavaScript, Flask, Socket.io, MongoDB, and Docker; features include media uploads, like counts, Spotify API integration, and live user lists over HTTPS.",
+      "Developed a social blogging site with media uploads, real-time chat, and gamified quizzes, containerized for easy deployment with Docker.",
     videoSrc: "videos/Hobbied.mp4",
-    githubLink: "https://github.com/maggiechen259/cse312project"
+    githubLink: "https://github.com/xxcel3/blog-post-app"
+  },
+  {
+    title: "[AI] Externship for Outamation",
+    description: "Designed and deployed an AI-driven document retrieval pipeline using LlamaIndex and Mistral to extract insights from unstructured financial PDFs.",     
+    imageSrc: "extern.png", 
+    link: "https://docs.google.com/presentation/d/1rn8ZRN2dVmmwefeRX_L6C9tte8EVDZFAYni-37e1kzQ/edit?usp=sharing", 
+    githubLink: "https://colab.research.google.com/drive/14ihzdZd5LF5wmhC4udUAaS1kXxukWa13?usp=sharing"  
   },
   {
     title: "[AI] Dog Breed Identifier",
@@ -42,9 +44,10 @@ const PROJECTS = [
     githubLink: "https://docs.google.com/presentation/d/1wIqGNpO7AX9lvImBtpFLyj4iuwK-1SuBmulX5WPnNMc/edit?usp=sharing"
   },
   {
-    title: "[AI] Externship for Outamation",
-    description: "Summer Externship in Progress",     // No media yet
-    githubLink: "https://github.com/xxcel3"
+    title: "[IOS] Gamified Step Tracker",
+    description:
+      "A planned iOS app that connects to Apple Health for step data, gamifies walking by rewarding users to care for a virtual pet.",
+    githubLink: "https://github.com/xxcel3" 
   }
 ];
 
